@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>Firstpro.enuma</StartupObject>
+    <StartupObject>Firstpro.getsetprogram</StartupObject>
   </PropertyGroup>
 
 </Project>
