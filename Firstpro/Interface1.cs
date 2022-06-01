@@ -8,16 +8,23 @@ namespace Firstpro
 {
     interface Interface1
     {
-        void add(int a, int b);
+       abstract void add(int a, int b);
     }
-    interface inter : Interface1
-    { 
-        void sub(int a, int b);
+    interface inter 
+    {
+       abstract void sub(int a, int b);
 
     }
-    class imp : inter
+
+
+    class imp : inter,Interface1 
     {
-        public void add(int a,int b)
+        
+       
+
+       
+
+        public void add(int a, int b)
         {
             Console.WriteLine(a + b);
         }
@@ -26,15 +33,14 @@ namespace Firstpro
         {
             Console.WriteLine(a - b);
         }
-    
-    static void Main()
+
+        static void Main()
         {
-            imp obj = new imp();
-            obj.add(10, 20);
-            obj.sub(30, 10);
-            Console.ReadLine();
+            imp i = new imp();
+            i.add(10, 20);
+            i.sub(20, 10);
+
         }
-    
     }
 
 
